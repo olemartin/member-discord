@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "member-discord-executor",
+    "name": "member-discord",
+    "region": "eu-west-3"
+  }
+}
