@@ -64,7 +64,7 @@ const calculateWarReadiness = player => {
 
     for (let j = 0; j < userCards.length; j++) {
         const card = userCards[j];
-        const levelDiff = card.maxLevel - card.level;
+        const levelDiff = card.maxLevel - card.displayLevel;
         switch (levelDiff) {
             case 0:
             case 1:
@@ -79,10 +79,10 @@ const calculateWarReadiness = player => {
     }
 
     const retur = {
-        legendary: (percent.legendary / 88.0 * 100).toFixed(0),
-        gold: (percent.gold / 88.0 * 100).toFixed(0),
-        silver: (percent.silver / 88.0 * 100).toFixed(0),
-        bronze: (percent.bronze / 88.0 * 100).toFixed(0),
+        legendary: (percent.legendary / 90.0 * 100).toFixed(0),
+        gold: (percent.gold / 90.0 * 100).toFixed(0),
+        silver: (percent.silver / 90.0 * 100).toFixed(0),
+        bronze: (percent.bronze / 90.0 * 100).toFixed(0),
     };
 
     return retur;
