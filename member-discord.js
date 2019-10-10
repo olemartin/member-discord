@@ -79,10 +79,10 @@ const calculateWarReadiness = player => {
     }
 
     const retur = {
-        legendary: (percent.legendary / 92.0 * 100).toFixed(0),
-        gold: (percent.gold / 92.0 * 100).toFixed(0),
-        silver: (percent.silver / 92.0 * 100).toFixed(0),
-        bronze: (percent.bronze / 92.0 * 100).toFixed(0),
+        legendary: (percent.legendary / 95.0 * 100).toFixed(0),
+        gold: (percent.gold / 95.0 * 100).toFixed(0),
+        silver: (percent.silver / 95.0 * 100).toFixed(0),
+        bronze: (percent.bronze / 95.0 * 100).toFixed(0),
     };
 
     return retur;
